@@ -3,8 +3,8 @@
 Kategori : Web Exploitation
 
 **Açıklama**:
-Bu Wbsitedeki Bayrağı Bulabilecek Misin.
-Gerekli detaylar makineyi başlattıktan sonra erişilebilinir olucaktır.
+Bu Websitedeki Bayrağı Bulabilecek Misin.
+Gerekli detaylar makineyi başlattıktan sonra erişilebilinir olacaktır.
 
 **İpuçları**:
 -SQLiLite
@@ -13,7 +13,7 @@ Gerekli detaylar makineyi başlattıktan sonra erişilebilinir olucaktır.
 
 Flag : picoCTF{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_98236ce6}
 
-Makineye Bağlandığımızda link üzerinden bir websiteye bağlanıyoruz ve karşımıza bu sayfa çıkıyor. 
+Makineye Bağlandığınızda link üzerinden bir website ye bağlanıyoruz ve karşımıza bu sayfa çıkıyor. 
 
 ![[1.png]]
 
