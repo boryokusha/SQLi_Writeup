@@ -31,7 +31,7 @@ Elimizde Sql Query olduğu için bir önceki ekrana geri dönerek "Username:" ve
 
 Girişi yaptıktan sonra karşımıza böyle bir ekran geliyor :
 
-![3.png]
+![3.png](https://github.com/boryokusha/SQLi_Writeup/blob/main/3.png)
 
 Bu ekranda tüm tabloları listelemek için uygulamanın hangi database i ve hangi sürümü kullandığını öğrenmemiz lazım . Tabi ki bu bilgiyi ipucundan da alabilirdik fakat ben size ipucu elimizde olmasaydı nasıl bu bilgiye erişebileceğimizi göstericem .
 
@@ -48,21 +48,21 @@ yazarak uygulamanın hangi SQL i ve hangi versiyonunu kullandığını öğreneb
 
 Karşımıza Çıkan Ekran :
 
-![4.png]
+![4.png](https://github.com/boryokusha/SQLi_Writeup/blob/main/4.png)
 
 Database hakkında bilgileri aldıktan sonra alttaki query i kullanarak tüm tabloları listeletebiliriz :
 `123' UNION SELECT name, sql, null from sqlite_master;--`
 
 Çıktımız :
 
-![5.png]
+![5.png](https://github.com/boryokusha/SQLi_Writeup/blob/main/5.png)
 
 Burada "more_table" flag column'unu görebiliriz.
 Daha sonra ise "more_table" tablosunu listeletmemiz lazım. Bunun içinde 
 `123' UNION SELECT flag, null, null from more_table;--`
 bu query i kullanacağız.
 
-![6.png]
+![6.png]()https://github.com/boryokusha/SQLi_Writeup/blob/main/6.png
 
 Çıktımız bu şekilde flag açık bir şekilde gösteriliyor. 
 
