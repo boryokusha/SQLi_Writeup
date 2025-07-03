@@ -15,7 +15,7 @@ Flag : picoCTF{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_98236ce6}
 
 Makineye Bağlandığınızda link üzerinden bir website ye bağlanıyoruz ve karşımıza bu sayfa çıkıyor. 
 
-1.png
+![1.png](https://github.com/boryokusha/SQLi_Writeup/blob/main/1.png)
 
 İlk olarak deneme için "Username:" ve "Password" kısımlarına "deneme" ve "deneme" olarak girişimizi sağlıyoruz. 
 
