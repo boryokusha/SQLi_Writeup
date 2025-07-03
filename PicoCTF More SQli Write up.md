@@ -62,7 +62,7 @@ Daha sonra ise "more_table" tablosunu listeletmemiz lazım. Bunun içinde
 `123' UNION SELECT flag, null, null from more_table;--`
 bu query i kullanacağız.
 
-![6.png]()https://github.com/boryokusha/SQLi_Writeup/blob/main/6.png
+![6.png](https://github.com/boryokusha/SQLi_Writeup/blob/main/6.png)
 
 Çıktımız bu şekilde flag açık bir şekilde gösteriliyor. 
 
