@@ -15,13 +15,13 @@ Flag : picoCTF{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_98236ce6}
 
 Makineye Bağlandığımızda link üzerinden bir websiteye bağlanıyoruz ve karşımıza bu sayfa çıkıyor. 
 
-![[Pasted image 20250703220438.png]]
+![[1.png]]
 
 İlk olarak deneme için "Username:" ve "Password" kısımlarına "deneme" ve "deneme" olarak girişimizi sağlıyoruz. 
 
 Ve karşımıza bu ekran çıkıyor :
 
-![[Pasted image 20250703220640.png]]
+![[2.png]]
 
 Bu ekranda açık şekilde SQL query i görebiliyoruz bu bir güvenlik açığıdır ve işimizi bayağı bir şekilde kolaylaştırıyor. 
 Eğer böyle bir ekran karşımıza çıkmasaydı Blind SQLi veya url de php erişimimiz olsaydı Out-Of-Band SQLi deneyebilirdik.
@@ -31,7 +31,7 @@ Elimizde Sql Query olduğu için bir önceki ekrana geri dönerek "Username:" ve
 
 Girişi yaptıktan sonra karşımıza böyle bir ekran geliyor :
 
-![[Pasted image 20250703221507.png]]
+![[3.png]]
 
 Bu ekranda tüm tabloları listelemek için uygulamanın hangi database i ve hangi sürümü kullandığını öğrenmemiz lazım . Tabi ki bu bilgiyi ipucundan da alabilirdik fakat ben size ipucu elimizde olmasaydı nasıl bu bilgiye erişebileceğimizi göstericem .
 
@@ -48,21 +48,21 @@ yazarak uygulamanın hangi SQL i ve hangi versiyonunu kullandığını öğreneb
 
 Karşımıza Çıkan Ekran :
 
-![[Pasted image 20250703222046.png]]
+![[4.png]]
 
 Database hakkında bilgileri aldıktan sonra alttaki query i kullanarak tüm tabloları listeletebiliriz :
 `123' UNION SELECT name, sql, null from sqlite_master;--`
 
 Çıktımız :
 
-![[Pasted image 20250703222312.png]]
+![[5.png]]
 
 Burada "more_table" flag column'unu görebiliriz.
 Daha sonra ise "more_table" tablosunu listeletmemiz lazım. Bunun içinde 
 `123' UNION SELECT flag, null, null from more_table;--`
 bu query i kullanacağız.
 
-![[Pasted image 20250703222525.png]]
+![[6.png]]
 
 Çıktımız bu şekilde flag açık bir şekilde gösteriliyor. 
 
