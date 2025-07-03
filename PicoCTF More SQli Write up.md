@@ -21,7 +21,7 @@ Makineye Bağlandığınızda link üzerinden bir website ye bağlanıyoruz ve k
 
 Ve karşımıza bu ekran çıkıyor :
 
-![[2.png]]
+![2.png]
 
 Bu ekranda açık şekilde SQL query i görebiliyoruz bu bir güvenlik açığıdır ve işimizi bayağı bir şekilde kolaylaştırıyor. 
 Eğer böyle bir ekran karşımıza çıkmasaydı Blind SQLi veya url de php erişimimiz olsaydı Out-Of-Band SQLi deneyebilirdik.
